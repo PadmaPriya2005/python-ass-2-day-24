@@ -1,0 +1,10 @@
+n=int(input())
+l=list(map(int,input().split()))
+s,e=map(int,input().split())
+start=l[0:s]
+end=l[e+1:n]
+sort=l[s:e+1]
+sort.sort()
+res=start+sort+end
+for i in res:
+    print(i,end=' ')
